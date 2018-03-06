@@ -3,6 +3,7 @@
 ## Настроим роутеры и интерфейсы на них:
 
 ###R1AR0:
+'''
 R1AR0>enable
 R1AR0#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
@@ -19,8 +20,10 @@ R1AR0(config-if)#end
 R1AR0#wr memo
 Building configuration...
 [OK]
+'''
 
 ###R2AR0:
+'''
 R2AR0>enable
 R2AR0#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
@@ -52,8 +55,10 @@ R2AR0(config-if)#end
 R2AR0#wr memo
 Building configuration...
 [OK]
+'''
 
 ###ABR:
+'''
 ABR>enable
 ABR#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
@@ -68,10 +73,12 @@ ABR(config-if)#end
 ABR#wr memo
 Building configuration...
 [OK]
+'''
 
 ## Запустим OSPF:
 
 ###R1AR0:
+'''
 R1AR0>enable
 R1AR0#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
@@ -83,8 +90,10 @@ R1AR0(config-router)#end
 R1AR0#wr memo
 Building configuration...
 [OK]
+'''
 
 ###R2AR0:
+'''
 R2AR0>enable
 R2AR0#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
@@ -96,8 +105,10 @@ R2AR0(config-router)#end
 R2AR0#wr memo
 Building configuration...
 [OK]
+'''
 
 ###ABR:
+'''
 ABR>enable
 ABR#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
@@ -108,6 +119,7 @@ ABR(config-router)#end
 ABR#wr memo
 Building configuration...
 [OK]
+'''
 
 ##Выполним команду show ip route на R1AR0:
 R1AR0#show ip route
